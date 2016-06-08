@@ -4,24 +4,33 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Hexo博客搭建 | 静静着望着你</title>
+  <title>Java IO | 静静着望着你</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="其实先前一直就有这个打算，就是因为一些琐事，迟迟没有写，今天终于下定决心，搭建这个HEXO博客环境，希望能把自己经历的一些点点滴滴记录下来，与大家一起分享。 HEXO，是一个比较成熟的静态博客框架直接就被我借鉴过来，搭建了我第一个博客环境.俗话说，工欲善其事，必先利其器。做开发的一样，好的工具，好的软件，会让我们的开发工具会让我们做起事来事半功倍。
-1. 配置环境
-NodeJs:用来生成静态页面的">
+  <meta name="description" content="流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作。
+1.IO流的分类
+根据处理数据类型的不同分为：字符流和字节流    
+根据数据流向不同分为：输入流和输出流
+2.字符流和字节流">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo博客搭建">
-<meta property="og:url" content="http://yoursite.com/2016/05/13/Hexo博客搭建/index.html">
+<meta property="og:title" content="Java IO">
+<meta property="og:url" content="http://yoursite.com/2016/05/13/Java-IO/index.html">
 <meta property="og:site_name" content="静静着望着你">
-<meta property="og:description" content="其实先前一直就有这个打算，就是因为一些琐事，迟迟没有写，今天终于下定决心，搭建这个HEXO博客环境，希望能把自己经历的一些点点滴滴记录下来，与大家一起分享。 HEXO，是一个比较成熟的静态博客框架直接就被我借鉴过来，搭建了我第一个博客环境.俗话说，工欲善其事，必先利其器。做开发的一样，好的工具，好的软件，会让我们的开发工具会让我们做起事来事半功倍。
-1. 配置环境
-NodeJs:用来生成静态页面的">
-<meta property="og:updated_time" content="2016-05-14T03:17:30.537Z">
+<meta property="og:description" content="流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作。
+1.IO流的分类
+根据处理数据类型的不同分为：字符流和字节流    
+根据数据流向不同分为：输入流和输出流
+2.字符流和字节流">
+<meta property="og:image" content="http://o6qt3bshp.bkt.clouddn.com/zgp7rmk4z4imsjnluzm7ycwz8h.png">
+<meta property="og:image" content="http://o6qt3bshp.bkt.clouddn.com/gxtn5tr0zy9cnwg211upfi8me7.png">
+<meta property="og:updated_time" content="2016-05-14T11:20:05.976Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo博客搭建">
-<meta name="twitter:description" content="其实先前一直就有这个打算，就是因为一些琐事，迟迟没有写，今天终于下定决心，搭建这个HEXO博客环境，希望能把自己经历的一些点点滴滴记录下来，与大家一起分享。 HEXO，是一个比较成熟的静态博客框架直接就被我借鉴过来，搭建了我第一个博客环境.俗话说，工欲善其事，必先利其器。做开发的一样，好的工具，好的软件，会让我们的开发工具会让我们做起事来事半功倍。
-1. 配置环境
-NodeJs:用来生成静态页面的">
+<meta name="twitter:title" content="Java IO">
+<meta name="twitter:description" content="流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作。
+1.IO流的分类
+根据处理数据类型的不同分为：字符流和字节流    
+根据数据流向不同分为：输入流和输出流
+2.字符流和字节流">
+<meta name="twitter:image" content="http://o6qt3bshp.bkt.clouddn.com/zgp7rmk4z4imsjnluzm7ycwz8h.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -171,11 +180,11 @@ NodeJs:用来生成静态页面的">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-Hexo博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Java-IO" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/13/Hexo博客搭建/" class="article-date">
-  	<time datetime="2016-05-13T07:53:01.000Z" itemprop="datePublished">2016-05-13</time>
+      <a href="/2016/05/13/Java-IO/" class="article-date">
+  	<time datetime="2016-05-13T03:22:22.000Z" itemprop="datePublished">2016-05-13</time>
 </a>
     </div>
   
@@ -188,7 +197,7 @@ NodeJs:用来生成静态页面的">
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo博客搭建
+      Java IO
     </h1>
   
 
@@ -197,7 +206,7 @@ NodeJs:用来生成静态页面的">
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发-框架/">开发,框架</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java-基础/">Java,基础</a></li></ul>
 	</div>
 
         
@@ -208,75 +217,50 @@ NodeJs:用来生成静态页面的">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>其实先前一直就有这个打算，就是因为一些琐事，迟迟没有写，今天终于下定决心，搭建这个HEXO博客环境，希望能把自己经历的一些点点滴滴记录下来，与大家一起分享。 HEXO，是一个比较成熟的静态博客框架直接就被我借鉴过来，搭建了我第一个博客环境.俗话说，工欲善其事，必先利其器。做开发的一样，好的工具，好的软件，会让我们的开发工具会让我们做起事来事半功倍。</strong></p>
-<p><strong>1. 配置环境</strong></p>
-<pre><code>NodeJs:用来生成静态页面的，hexo就是基于nodejs的，到Node.js官网下载相应平台的最新版本，一路安装即可。
-
-Git:把本地的hexo内容提交到github上去
-
-GitHub:服务需要发布网上，大家才能访问，github支持静态资源访问，所以必须要有github账号 
-</code></pre><hr>
+        <p>流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作。</p>
+<p><strong>1.IO流的分类</strong></p>
+<p>根据处理数据类型的不同分为：字符流和字节流    </p>
+<p>根据数据流向不同分为：输入流和输出流</p>
+<p><strong>2.字符流和字节流</strong></p>
 <a id="more"></a>
-<p><strong>2.安装</strong></p>
-<p><em>步骤:</em></p>
-<pre><code>1.sudo npm install-g hexo hexo基本配置文件
+<p>字符流的由来： 因为数据编码的不同，而有了对字符进行高效操作的流对象。本质其实就是基于字节流读取时，去查了指定的码表。字节流和字符流的区别：</p>
+<p>（1）读写单位不同：字节流以字节（8bit）为单位，字符流以字符为单位，根据码表映射字符，一次可能读多个字节。</p>
+<p>（2）处理对象不同：字节流能处理所有类型的数据（如图片、avi等），而字符流只能处理字符类型的数据。</p>
+<p>（3）字节流在操作的时候本身是不会用到缓冲区的，是文件本身的直接操作的；而字符流在操作的时候下后是会用到缓冲区的，是通过缓冲区来操作文件，我们将在下面验证这一点。</p>
+<p>结论：优先选用字节流。首先因为硬盘上的所有文件都是以字节的形式进行传输或者保存的，包括图片等内容。但是字符只是在内存中才会形成的，所以在开发中，字节流使用广泛。</p>
+<p>流的分类<br>节点流：从特定的地方读写的流类，例如：磁盘或一块内存区域。<br>过滤流：使用节点流作为输入或输出。过滤流是使用一个已经存在的输入流或输出流连接创建的。</p>
+<p>java.io包中 InputStream的类层次</p>
+<p><img src="http://o6qt3bshp.bkt.clouddn.com/zgp7rmk4z4imsjnluzm7ycwz8h.png" alt=""></p>
+<p>基本方法<br>      abstract int read() ：读取一个字节数据，并返回读到的数据，如果返回-1，表示读到了输入流的末尾。</p>
+<pre><code>int read(byte[]?b) ：将数据读入一个字节数组，同时返回实际读取的字节数。如果返回-1，表示读到了输入流的末尾。
 
-2.hexo init hexo初始化
+int read(byte[]?b, int?off, int?len) ：将数据读入一个字节数组，同时返回实际读取的字节数。如果返回-1，表示读到了输入流的末尾。off指定在数组b中存放数据的起始偏移位置；len指定读取的最大字节数。
 
-3.hexo generate 生成静态页面
+long skip(long?n) ：在输入流中跳过n个字节，并返回实际跳过的字节数。
 
-4.hexo server 启动本地服务 浏览器输入http://localhost:4000
-</code></pre><p><em>同时还有对应的简化命令，好像后面每个单词首字</em></p>
-<pre><code>hexo n == hexo new
+int available() ：返回在不发生阻塞的情况下，可读取的字节数。
 
-hexo g == hexo generate
+void close() ：关闭输入流，释放和这个流相关的系统资源。
 
-hexo s == hexo server
+void mark(int?readlimit) ：在输入流的当前位置放置一个标记，如果读取的字节数多于readlimit设置的值，则流忽略这个标记。
 
-hexo d == hexo deploy
+void reset() ：返回到上一个标记。
 
-hexo n == hexo new 
-</code></pre><p><em>部署Github</em></p>
-<p><em>Hexo(3.2.0)文件配置</em></p>
-<p>_config.yml  repo属性</p>
-<pre><code>type: git
+boolean markSupported() ：测试当前流是否支持mark和reset方法。如果支持，返回true，否则返回false。
+</code></pre><p>java.io包中 OutputStream的类层次</p>
+<p><img src="http://o6qt3bshp.bkt.clouddn.com/gxtn5tr0zy9cnwg211upfi8me7.png" alt=""></p>
+<p>基本方法<br>     abstract void write(int?b) ：往输出流中写入一个字节。</p>
+<pre><code>void write(byte[]?b) ：往输出流中写入数组b中的所有字节。
 
-repository: git@github.com:15527918732/15527918732.github.io.git
+void write(byte[]?b, int?off, int?len) ：往输出流中写入数组b中从偏移量off开始的len个字节的数据。
 
-branch: master
-</code></pre><p><em>Github配置:</em></p>
-<pre><code>Github项目命名:账号+.github.io
+void flush() ：刷新输出流，强制缓冲区中的输出字节被写出。
 
-GitHub项目配置:settings-GitHub Pages项目发布出去
-</code></pre><p><strong>3.我遇到的坑</strong></p>
-<ul>
-<li>服务允许了，但是打开乱码_config.yml配置文件编码不是UTF-8,使用记事本打开另为UTF-8就好了</li>
-</ul>
-<ul>
-<li>修改配置文件的时候,不要乱删空格和空行.</li>
-</ul>
-<ul>
-<li>部署的时候,老是没有权限：先检查本地有没有密钥文件（~/.ssh）目录，没有的化根据网上配置，生成自己的密钥，同时把公钥复制下来，放github项目 settting-Deploy keys添加进去即可。</li>
-</ul>
-<ul>
-<li>hexo部署问题：Error: spawn git ENOENT，hexo部署的时候应该也是一系列git命令的合集，需要git-server的支持。添加环境变量：C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Git\libexec\git-core，这样就解决了问题了。</li>
-</ul>
-<ul>
-<li>部署的时候老是报ERROR Deployer not found: git,执行一下npm install hexo-deployer-git –save这个命令</li>
-</ul>
-<ul>
-<li>网上下载.deploy_git影响了我的发布，它竟然把源代码提交上去啦，把他删除即可，git init重新生成就可以把自己的生成静态文件提交上去啦</li>
-</ul>
-<p><strong>4.结束语</strong></p>
-<ul>
-<li>如果想要换模版:t_config.yml 配置文件里面theme值改掉就好啦，默认是landscape</li>
-</ul>
-<ul>
-<li>如果 想要有分类标签，在文章签名tags:</li>
-</ul>
-<ul>
-<li>如果不想文章显示过多，在文章必要之处添加&lt;!–more–></li>
-</ul>
+void close() ：关闭输出流，释放和这个流相关的系统资源。
+</code></pre><p> 3.字符流与字节流转换</p>
+<p>InputStreamReader:字节到字符的桥梁,OutputStreamWriter:字符到字节的桥梁,这两个流对象是字符体系中的成员，它们有转换作用，本身又是字符流，所以在构造的时候需要传入字节流对象进来。当字节和字符之间有转换动作时,流操作的数据需要编码或解码时.字符流和字节流之间的桥梁,可对读取到的字节数据经过指定编码转换成字符,可对读取到的字符数据经过指定编码转换成字节.</p>
+<p> 4.IO使用细节</p>
+<p>   使用io的时候，需特别注意，在写入流的的时候，在关闭之前一定要flush，在io处理过程发生异常，一定要在捕获的异常里面关闭，否则会消耗系统资源。Apache下common-io包封装好了io处理，建议大家可以多使用这里。</p>
 
       
     </div>
@@ -286,20 +270,15 @@ GitHub项目配置:settings-GitHub Pages项目发布出去
     
 <nav id="article-nav">
   
-    <a href="/2016/05/14/Java强制类型转换/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/05/13/Hexo博客搭建/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          Java强制类型转换
+          Hexo博客搭建
         
       </div>
     </a>
   
-  
-    <a href="/2016/05/13/Java-IO/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java IO</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
   
 </nav>
 
@@ -324,7 +303,7 @@ GitHub项目配置:settings-GitHub Pages项目发布出去
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Hexo博客搭建" data-title="Hexo博客搭建" data-url="http://yoursite.com/2016/05/13/Hexo博客搭建/"></div>
+	<div class="ds-thread" data-thread-key="Java-IO" data-title="Java IO" data-url="http://yoursite.com/2016/05/13/Java-IO/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

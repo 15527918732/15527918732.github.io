@@ -4,24 +4,28 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Hexo博客搭建 | 静静着望着你</title>
+  <title>Java-NIO | 静静着望着你</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="其实先前一直就有这个打算，就是因为一些琐事，迟迟没有写，今天终于下定决心，搭建这个HEXO博客环境，希望能把自己经历的一些点点滴滴记录下来，与大家一起分享。 HEXO，是一个比较成熟的静态博客框架直接就被我借鉴过来，搭建了我第一个博客环境.俗话说，工欲善其事，必先利其器。做开发的一样，好的工具，好的软件，会让我们的开发工具会让我们做起事来事半功倍。
-1. 配置环境
-NodeJs:用来生成静态页面的">
+  <meta name="description" content="1.NIO中的几个基础概念
+传统IO中，Stream是单向的，比如InputStream只能进行读取操作，OutputStream只能进行写操作。而Channel是双向的，既可用来进行读操作，又可用来进行写操作。
+　Buffer（缓冲区），是NIO中非常重要的一个东西，在NIO中所有数据的读和写都离不开Buffer。比如上面的一段代码中，读取的数据时放在byte数组当中，而在NIO中，读取的数据只">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo博客搭建">
-<meta property="og:url" content="http://yoursite.com/2016/05/13/Hexo博客搭建/index.html">
+<meta property="og:title" content="Java-NIO">
+<meta property="og:url" content="http://yoursite.com/2016/05/16/Java-NIO/index.html">
 <meta property="og:site_name" content="静静着望着你">
-<meta property="og:description" content="其实先前一直就有这个打算，就是因为一些琐事，迟迟没有写，今天终于下定决心，搭建这个HEXO博客环境，希望能把自己经历的一些点点滴滴记录下来，与大家一起分享。 HEXO，是一个比较成熟的静态博客框架直接就被我借鉴过来，搭建了我第一个博客环境.俗话说，工欲善其事，必先利其器。做开发的一样，好的工具，好的软件，会让我们的开发工具会让我们做起事来事半功倍。
-1. 配置环境
-NodeJs:用来生成静态页面的">
-<meta property="og:updated_time" content="2016-05-14T03:17:30.537Z">
+<meta property="og:description" content="1.NIO中的几个基础概念
+传统IO中，Stream是单向的，比如InputStream只能进行读取操作，OutputStream只能进行写操作。而Channel是双向的，既可用来进行读操作，又可用来进行写操作。
+　Buffer（缓冲区），是NIO中非常重要的一个东西，在NIO中所有数据的读和写都离不开Buffer。比如上面的一段代码中，读取的数据时放在byte数组当中，而在NIO中，读取的数据只">
+<meta property="og:image" content="http://o6qt3bshp.bkt.clouddn.com/ufsb22mvhvq85iv90whvr1sfez.png">
+<meta property="og:image" content="http://o6qt3bshp.bkt.clouddn.com/wyxi7pyplw6rblrg2p0qlc2kb7.png">
+<meta property="og:image" content="http://o6qt3bshp.bkt.clouddn.com/irho0yh9as65sksfynf9am4bcs.png">
+<meta property="og:updated_time" content="2016-05-16T10:35:23.047Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo博客搭建">
-<meta name="twitter:description" content="其实先前一直就有这个打算，就是因为一些琐事，迟迟没有写，今天终于下定决心，搭建这个HEXO博客环境，希望能把自己经历的一些点点滴滴记录下来，与大家一起分享。 HEXO，是一个比较成熟的静态博客框架直接就被我借鉴过来，搭建了我第一个博客环境.俗话说，工欲善其事，必先利其器。做开发的一样，好的工具，好的软件，会让我们的开发工具会让我们做起事来事半功倍。
-1. 配置环境
-NodeJs:用来生成静态页面的">
+<meta name="twitter:title" content="Java-NIO">
+<meta name="twitter:description" content="1.NIO中的几个基础概念
+传统IO中，Stream是单向的，比如InputStream只能进行读取操作，OutputStream只能进行写操作。而Channel是双向的，既可用来进行读操作，又可用来进行写操作。
+　Buffer（缓冲区），是NIO中非常重要的一个东西，在NIO中所有数据的读和写都离不开Buffer。比如上面的一段代码中，读取的数据时放在byte数组当中，而在NIO中，读取的数据只">
+<meta name="twitter:image" content="http://o6qt3bshp.bkt.clouddn.com/ufsb22mvhvq85iv90whvr1sfez.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -171,11 +175,11 @@ NodeJs:用来生成静态页面的">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-Hexo博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Java-NIO" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/13/Hexo博客搭建/" class="article-date">
-  	<time datetime="2016-05-13T07:53:01.000Z" itemprop="datePublished">2016-05-13</time>
+      <a href="/2016/05/16/Java-NIO/" class="article-date">
+  	<time datetime="2016-05-16T10:00:21.000Z" itemprop="datePublished">2016-05-16</time>
 </a>
     </div>
   
@@ -188,7 +192,7 @@ NodeJs:用来生成静态页面的">
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo博客搭建
+      Java-NIO
     </h1>
   
 
@@ -197,7 +201,7 @@ NodeJs:用来生成静态页面的">
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发-框架/">开发,框架</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java-IO/">Java IO</a></li></ul>
 	</div>
 
         
@@ -208,75 +212,27 @@ NodeJs:用来生成静态页面的">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>其实先前一直就有这个打算，就是因为一些琐事，迟迟没有写，今天终于下定决心，搭建这个HEXO博客环境，希望能把自己经历的一些点点滴滴记录下来，与大家一起分享。 HEXO，是一个比较成熟的静态博客框架直接就被我借鉴过来，搭建了我第一个博客环境.俗话说，工欲善其事，必先利其器。做开发的一样，好的工具，好的软件，会让我们的开发工具会让我们做起事来事半功倍。</strong></p>
-<p><strong>1. 配置环境</strong></p>
-<pre><code>NodeJs:用来生成静态页面的，hexo就是基于nodejs的，到Node.js官网下载相应平台的最新版本，一路安装即可。
-
-Git:把本地的hexo内容提交到github上去
-
-GitHub:服务需要发布网上，大家才能访问，github支持静态资源访问，所以必须要有github账号 
-</code></pre><hr>
-<a id="more"></a>
-<p><strong>2.安装</strong></p>
-<p><em>步骤:</em></p>
-<pre><code>1.sudo npm install-g hexo hexo基本配置文件
-
-2.hexo init hexo初始化
-
-3.hexo generate 生成静态页面
-
-4.hexo server 启动本地服务 浏览器输入http://localhost:4000
-</code></pre><p><em>同时还有对应的简化命令，好像后面每个单词首字</em></p>
-<pre><code>hexo n == hexo new
-
-hexo g == hexo generate
-
-hexo s == hexo server
-
-hexo d == hexo deploy
-
-hexo n == hexo new 
-</code></pre><p><em>部署Github</em></p>
-<p><em>Hexo(3.2.0)文件配置</em></p>
-<p>_config.yml  repo属性</p>
-<pre><code>type: git
-
-repository: git@github.com:15527918732/15527918732.github.io.git
-
-branch: master
-</code></pre><p><em>Github配置:</em></p>
-<pre><code>Github项目命名:账号+.github.io
-
-GitHub项目配置:settings-GitHub Pages项目发布出去
-</code></pre><p><strong>3.我遇到的坑</strong></p>
-<ul>
-<li>服务允许了，但是打开乱码_config.yml配置文件编码不是UTF-8,使用记事本打开另为UTF-8就好了</li>
-</ul>
-<ul>
-<li>修改配置文件的时候,不要乱删空格和空行.</li>
-</ul>
-<ul>
-<li>部署的时候,老是没有权限：先检查本地有没有密钥文件（~/.ssh）目录，没有的化根据网上配置，生成自己的密钥，同时把公钥复制下来，放github项目 settting-Deploy keys添加进去即可。</li>
-</ul>
-<ul>
-<li>hexo部署问题：Error: spawn git ENOENT，hexo部署的时候应该也是一系列git命令的合集，需要git-server的支持。添加环境变量：C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Git\libexec\git-core，这样就解决了问题了。</li>
-</ul>
-<ul>
-<li>部署的时候老是报ERROR Deployer not found: git,执行一下npm install hexo-deployer-git –save这个命令</li>
-</ul>
-<ul>
-<li>网上下载.deploy_git影响了我的发布，它竟然把源代码提交上去啦，把他删除即可，git init重新生成就可以把自己的生成静态文件提交上去啦</li>
-</ul>
-<p><strong>4.结束语</strong></p>
-<ul>
-<li>如果想要换模版:t_config.yml 配置文件里面theme值改掉就好啦，默认是landscape</li>
-</ul>
-<ul>
-<li>如果 想要有分类标签，在文章签名tags:</li>
-</ul>
-<ul>
-<li>如果不想文章显示过多，在文章必要之处添加&lt;!–more–></li>
-</ul>
+        <p><strong>1.NIO中的几个基础概念</strong></p>
+<p>传统IO中，Stream是单向的，比如InputStream只能进行读取操作，OutputStream只能进行写操作。而Channel是双向的，既可用来进行读操作，又可用来进行写操作。</p>
+<p>　<br>Buffer（缓冲区），是NIO中非常重要的一个东西，在NIO中所有数据的读和写都离不开Buffer。比如上面的一段代码中，读取的数据时放在byte数组当中，而在NIO中，读取的数据只能放在Buffer中。同样地，写入数据也是先写入到Buffer中。</p>
+<p>Selector，可以说它是NIO中最关键的一个部分，Selector的作用就是用来轮询每个注册的Channel，一旦发现Channel有注册的事件发生，便获取事件然后进行处理，单线程处理一个Selector，然后通过Selector.select()方法来获取到达事件，在获取了到达事件之后，就可以逐个地对这些事件进行响应处理。</p>
+<p>下面是java NIO的工作原理：</p>
+<p>1.由一个专门的线程来处理所有的 IO 事件，并负责分发。</p>
+<p>2.事件驱动机制：事件到的时候触发，而不是同步的去监视事件</p>
+<p>3.线程通讯：线程之间通过 wait,notify 等方式通讯。保证每次上下文切换都是有意义的。减少无谓的线程切换。<br><a id="more"></a></p>
+<p><img src="http://o6qt3bshp.bkt.clouddn.com/ufsb22mvhvq85iv90whvr1sfez.png" alt=""></p>
+<p><strong>2.Channel</strong></p>
+<p>通道是双向的，通过一个Channel既可以进行读，也可以进行写，如FileChannel，SocketChanel，ServerSocketChannel,DatagramChannel<br>覆盖传统IO所有。应用FileChannel.transferFrom();复制大文件效率较高</p>
+<p><strong>3.Buffer</strong></p>
+<p>Buffer缓冲区，实际上是一个容器，是一个连续数组。Channel提供从文件、网络读取数据的渠道，但是读取或写入的数据都必须经由Buffer。<br>常用的Buffer的子类有：ByteBuffer，IntBuffer，CharBuffer，LongBuffer，DoubleBuffer，FloatBuffer，ShortBuffer。</p>
+<p><img src="http://o6qt3bshp.bkt.clouddn.com/wyxi7pyplw6rblrg2p0qlc2kb7.png" alt=""></p>
+<p><strong>4.Selector</strong></p>
+<p>Selector类是NIO的核心类，Selector能够检测多个注册的通道上是否有事件发生，如果有事件发生，便获取事件然后针对每个事件进行相应的响应处理。这样一来，只是用一个单线程就可以管理多个通道，也就是管理多个连接。这样使得只有在连接真正有读写事件发生时，才会调用函数来进行读写，就大大地减少了系统开销，并且不必为每个连接都创建一个线程，不用去维护多个线程，并且避免了多线程之间的上下文切换导致的开销。<br>与Selector有关的一个关键类是SelectionKey，一个SelectionKey表示一个到达的事件，这2个类构成了服务端处理业务的关键逻辑。</p>
+<p><strong>5，BIO,AIO区别</strong></p>
+<p>BIO与NIO一个比较重要的不同，是我们使用BIO的时候往往会引入多线程，每个连接一个单独的线程；而NIO则是使用单线程或者只使用少量的多线程，每个连接共用一个线程。</p>
+<p>NIO的最重要的地方是当一个连接创建后，不需要对应一个线程，这个连接会被注册到多路复用器上面，所以所有的连接只需要一个线程就可以搞定，当这个线程 中的多路复用器进行轮询的时候，发现连接上有请求的话，才开启一个线程进行处理，也就是一个请求一个线程模式。</p>
+<p>在NIO的处理方式中，当一个请求来的话，开启线程进行处理，可能会等待后端应用的资源(JDBC连接等)，其实这个线程就被阻塞了，当并发上来的话，还是会有BIO一样的问题。</p>
+<p><img src="http://o6qt3bshp.bkt.clouddn.com/irho0yh9as65sksfynf9am4bcs.png" alt=""></p>
 
       
     </div>
@@ -286,18 +242,18 @@ GitHub项目配置:settings-GitHub Pages项目发布出去
     
 <nav id="article-nav">
   
-    <a href="/2016/05/14/Java强制类型转换/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/06/08/代码走查思考/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          Java强制类型转换
+          代码走查思考
         
       </div>
     </a>
   
   
-    <a href="/2016/05/13/Java-IO/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java IO</div>
+    <a href="/2016/05/14/Java规范-代码/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java规范-代码</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -324,7 +280,7 @@ GitHub项目配置:settings-GitHub Pages项目发布出去
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Hexo博客搭建" data-title="Hexo博客搭建" data-url="http://yoursite.com/2016/05/13/Hexo博客搭建/"></div>
+	<div class="ds-thread" data-thread-key="Java-NIO" data-title="Java-NIO" data-url="http://yoursite.com/2016/05/16/Java-NIO/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
