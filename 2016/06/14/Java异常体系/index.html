@@ -4,33 +4,32 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Java IO | 静静着望着你</title>
+  <title>Java异常体系 | 静静着望着你</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作。
-1.IO流的分类
-根据处理数据类型的不同分为：字符流和字节流    
-根据数据流向不同分为：输入流和输出流
-2.字符流和字节流">
+  <meta name="description" content="1.概念
+Throwable：作为所有异常的祖先，分别有派生出Exception和Error两个子类。
+Error：Error的出现表明是JVM作为一个运行环境出现了问题，导致程序抛出Error而崩溃。
+Exception：程序运行本身的异常。派生出RuntimeException和IOException两大类。
+RuntimeException：运行时异常，包括逻辑上的比如数组越界，空指针，类型">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java IO">
-<meta property="og:url" content="http://yoursite.com/2016/05/13/Java-IO/index.html">
+<meta property="og:title" content="Java异常体系">
+<meta property="og:url" content="http://yoursite.com/2016/06/14/Java异常体系/index.html">
 <meta property="og:site_name" content="静静着望着你">
-<meta property="og:description" content="流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作。
-1.IO流的分类
-根据处理数据类型的不同分为：字符流和字节流    
-根据数据流向不同分为：输入流和输出流
-2.字符流和字节流">
-<meta property="og:image" content="http://o6qt3bshp.bkt.clouddn.com/zgp7rmk4z4imsjnluzm7ycwz8h.png">
-<meta property="og:image" content="http://o6qt3bshp.bkt.clouddn.com/gxtn5tr0zy9cnwg211upfi8me7.png">
-<meta property="og:updated_time" content="2016-05-14T11:20:05.976Z">
+<meta property="og:description" content="1.概念
+Throwable：作为所有异常的祖先，分别有派生出Exception和Error两个子类。
+Error：Error的出现表明是JVM作为一个运行环境出现了问题，导致程序抛出Error而崩溃。
+Exception：程序运行本身的异常。派生出RuntimeException和IOException两大类。
+RuntimeException：运行时异常，包括逻辑上的比如数组越界，空指针，类型">
+<meta property="og:image" content="http://o6qt3bshp.bkt.clouddn.com/qezbg5h3rb9sh39fanwjvzs6sk.png">
+<meta property="og:updated_time" content="2016-06-14T10:09:07.406Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java IO">
-<meta name="twitter:description" content="流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作。
-1.IO流的分类
-根据处理数据类型的不同分为：字符流和字节流    
-根据数据流向不同分为：输入流和输出流
-2.字符流和字节流">
-<meta name="twitter:image" content="http://o6qt3bshp.bkt.clouddn.com/zgp7rmk4z4imsjnluzm7ycwz8h.png">
+<meta name="twitter:title" content="Java异常体系">
+<meta name="twitter:description" content="1.概念
+Throwable：作为所有异常的祖先，分别有派生出Exception和Error两个子类。
+Error：Error的出现表明是JVM作为一个运行环境出现了问题，导致程序抛出Error而崩溃。
+Exception：程序运行本身的异常。派生出RuntimeException和IOException两大类。
+RuntimeException：运行时异常，包括逻辑上的比如数组越界，空指针，类型">
+<meta name="twitter:image" content="http://o6qt3bshp.bkt.clouddn.com/qezbg5h3rb9sh39fanwjvzs6sk.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -180,11 +179,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-Java-IO" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Java异常体系" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/13/Java-IO/" class="article-date">
-  	<time datetime="2016-05-13T03:22:22.000Z" itemprop="datePublished">2016-05-13</time>
+      <a href="/2016/06/14/Java异常体系/" class="article-date">
+  	<time datetime="2016-06-14T09:44:22.000Z" itemprop="datePublished">2016-06-14</time>
 </a>
     </div>
   
@@ -197,7 +196,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Java IO
+      Java异常体系
     </h1>
   
 
@@ -206,7 +205,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java-基础/">Java,基础</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA-异常/">JAVA,异常</a></li></ul>
 	</div>
 
         
@@ -217,50 +216,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作。</p>
-<p><strong>1.IO流的分类</strong></p>
-<p>根据处理数据类型的不同分为：字符流和字节流    </p>
-<p>根据数据流向不同分为：输入流和输出流</p>
-<p><strong>2.字符流和字节流</strong></p>
-<a id="more"></a>
-<p>字符流的由来： 因为数据编码的不同，而有了对字符进行高效操作的流对象。本质其实就是基于字节流读取时，去查了指定的码表。字节流和字符流的区别：</p>
-<p>（1）读写单位不同：字节流以字节（8bit）为单位，字符流以字符为单位，根据码表映射字符，一次可能读多个字节。</p>
-<p>（2）处理对象不同：字节流能处理所有类型的数据（如图片、avi等），而字符流只能处理字符类型的数据。</p>
-<p>（3）字节流在操作的时候本身是不会用到缓冲区的，是文件本身的直接操作的；而字符流在操作的时候下后是会用到缓冲区的，是通过缓冲区来操作文件，我们将在下面验证这一点。</p>
-<p>结论：优先选用字节流。首先因为硬盘上的所有文件都是以字节的形式进行传输或者保存的，包括图片等内容。但是字符只是在内存中才会形成的，所以在开发中，字节流使用广泛。</p>
-<p>流的分类<br>节点流：从特定的地方读写的流类，例如：磁盘或一块内存区域。<br>过滤流：使用节点流作为输入或输出。过滤流是使用一个已经存在的输入流或输出流连接创建的。</p>
-<p>java.io包中 InputStream的类层次</p>
-<p><img src="http://o6qt3bshp.bkt.clouddn.com/zgp7rmk4z4imsjnluzm7ycwz8h.png" alt=""></p>
-<p>基本方法<br>      abstract int read() ：读取一个字节数据，并返回读到的数据，如果返回-1，表示读到了输入流的末尾。</p>
-<pre><code>int read(byte[]?b) ：将数据读入一个字节数组，同时返回实际读取的字节数。如果返回-1，表示读到了输入流的末尾。
-
-int read(byte[]?b, int?off, int?len) ：将数据读入一个字节数组，同时返回实际读取的字节数。如果返回-1，表示读到了输入流的末尾。off指定在数组b中存放数据的起始偏移位置；len指定读取的最大字节数。
-
-long skip(long?n) ：在输入流中跳过n个字节，并返回实际跳过的字节数。
-
-int available() ：返回在不发生阻塞的情况下，可读取的字节数。
-
-void close() ：关闭输入流，释放和这个流相关的系统资源。
-
-void mark(int?readlimit) ：在输入流的当前位置放置一个标记，如果读取的字节数多于readlimit设置的值，则流忽略这个标记。
-
-void reset() ：返回到上一个标记。
-
-boolean markSupported() ：测试当前流是否支持mark和reset方法。如果支持，返回true，否则返回false。
-</code></pre><p>java.io包中 OutputStream的类层次</p>
-<p><img src="http://o6qt3bshp.bkt.clouddn.com/gxtn5tr0zy9cnwg211upfi8me7.png" alt=""></p>
-<p>基本方法<br>     abstract void write(int?b) ：往输出流中写入一个字节。</p>
-<pre><code>void write(byte[]?b) ：往输出流中写入数组b中的所有字节。
-
-void write(byte[]?b, int?off, int?len) ：往输出流中写入数组b中从偏移量off开始的len个字节的数据。
-
-void flush() ：刷新输出流，强制缓冲区中的输出字节被写出。
-
-void close() ：关闭输出流，释放和这个流相关的系统资源。
-</code></pre><p> 3.字符流与字节流转换</p>
-<p>InputStreamReader:字节到字符的桥梁,OutputStreamWriter:字符到字节的桥梁,这两个流对象是字符体系中的成员，它们有转换作用，本身又是字符流，所以在构造的时候需要传入字节流对象进来。当字节和字符之间有转换动作时,流操作的数据需要编码或解码时.字符流和字节流之间的桥梁,可对读取到的字节数据经过指定编码转换成字符,可对读取到的字符数据经过指定编码转换成字节.</p>
-<p> 4.IO使用细节</p>
-<p>   使用io的时候，需特别注意，在写入流的的时候，在关闭之前一定要flush，在io处理过程发生异常，一定要在捕获的异常里面关闭，否则会消耗系统资源。Apache下common-io包封装好了io处理，建议大家可以多使用这里。</p>
+        <p>1.概念</p>
+<p>Throwable：作为所有异常的祖先，分别有派生出Exception和Error两个子类。</p>
+<p>Error：Error的出现表明是JVM作为一个运行环境出现了问题，导致程序抛出Error而崩溃。</p>
+<p>Exception：程序运行本身的异常。派生出RuntimeException和IOException两大类。</p>
+<p>RuntimeException：运行时异常，包括逻辑上的比如数组越界，空指针，类型转换错误，类找不到等等。与逻辑相关的异常，一定是程序员的错误，就应该从逻辑上避免，编译器不检查，也不要求一定处理。</p>
+<p>非运行时异常（checked exceptions）：如果不处理，编译不通过。比如IOException和SQLException，以及用户自定义的异常。<br><a id="more"></a></p>
+<p><img src="http://o6qt3bshp.bkt.clouddn.com/qezbg5h3rb9sh39fanwjvzs6sk.png" alt=""></p>
+<p>2.处理方式：</p>
+<p>捕获：try…catch…finaly  如果可能发生多个异常对象，catch最小的异常，否则有可能进入父类异常,finaly 保证所有资源都被正确释放.</p>
+<p>抛出：给上一层处理。在定义方法的时候抛异常使用throws。而在代码中主动抛异常则使用throw.</p>
+<p>3.处理细节</p>
+<p>结论一:既然捕获了异常，就要对它进行适当的处理。不要捕获异常之后又把它丢弃，不予理睬。（调用一下printStackTrace算不上“处理异常”。不错，调用printStackTrace对调试程序有帮助，但程序调试阶段结束之后，printStackTrace就不应再在异常处理模块中担负主要责任）</p>
+<p>结论二:重新抛出异常。处理异常的代码在分析异常之后，认为自己不能处理它，重新抛出异常也不失为一种选择。</p>
+<p>结论三:把该异常转换成另一种异常。大多数情况下，这是指把一个低级的异常转换成应用级的异常（其含义更容易被用户了解的异常）。</p>
+<p>结论四:catch语句表示我们预期会出现某种异常，而且希望能够处理该异常，由于绝大多数异常都直接或间接从java.lang.Exception派生，catch (Exception ex)就相当于说我们想要处理几乎所有的异常，catch语句应当尽量指定具体的异常类型，而不应该指定涵盖范围太广的 Exception类。(JDBC操作中常见的异常SQLException,文件读写IOException，同一个catch块中处理这两种截然不同的异常是不合适的)。</p>
+<p>结论五：保证所有资源都被正确释放。充分运用finally关键词。</p>
+<p>结论六：在异常处理模块中提供适量的错误原因信息，组织错误信息使其易于理解和阅读。说白了就是把代码转换人类可阅读信息</p>
+<p>结论五：尽量减小try块的体积。（一些新手常常把大量的代码放入单个try块，然后再在catch语句中声明Exception，而不是分离各个可能出现异常的段落并分别捕获其异常。这种做法为分析程序抛出异常的原因带来了困难，因为一大段代码中有太多的地方可能抛出Exception.）</p>
 
       
     </div>
@@ -270,15 +243,11 @@ void close() ：关闭输出流，释放和这个流相关的系统资源。
     
 <nav id="article-nav">
   
-    <a href="/2016/05/13/Hexo博客搭建/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Hexo博客搭建
-        
-      </div>
-    </a>
   
+    <a href="/2016/06/13/自动签到qiandao-today/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">自动签到qiandao.today</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -303,7 +272,7 @@ void close() ：关闭输出流，释放和这个流相关的系统资源。
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Java-IO" data-title="Java IO" data-url="http://yoursite.com/2016/05/13/Java-IO/"></div>
+	<div class="ds-thread" data-thread-key="Java异常体系" data-title="Java异常体系" data-url="http://yoursite.com/2016/06/14/Java异常体系/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
